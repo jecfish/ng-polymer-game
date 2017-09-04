@@ -9,7 +9,9 @@
       "outDir": "dist",
       "assets": [
         "assets",
-        "favicon.ico"
+        "favicon.ico",
+        { "glob": "webcomponents-loader.js", "input": "../node_modules/@webcomponents/webcomponentsjs", "output": "./scripts/" },
+        { "glob": "**/*", "input": "./scripts", "output": "./scripts/" }
       ],
       "index": "index.html",
       "main": "main.ts",
